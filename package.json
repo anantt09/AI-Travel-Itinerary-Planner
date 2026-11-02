@@ -1,0 +1,11 @@
+{
+  "name": "travel-itinerary-planner",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "python main.py",
+    "build": "npm --prefix frontend run build"
+  }
+}

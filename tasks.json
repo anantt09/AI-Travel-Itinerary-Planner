@@ -1,0 +1,53 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🐍 Start Backend",
+      "type": "shell",
+      "command": "python",
+      "args": ["main.py"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "wandercraft",
+        "label": "Backend (FastAPI :8000)"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "⚡ Start Frontend",
+      "type": "shell",
+      "command": "npm",
+      "args": ["--prefix", "frontend", "run", "dev"],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "group": "wandercraft",
+        "label": "Frontend (React :5173)"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "🚀 WanderCraft AI — Start All",
+      "dependsOrder": "parallel",
+      "dependsOn": ["🐍 Start Backend", "⚡ Start Frontend"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

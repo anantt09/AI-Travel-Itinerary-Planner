@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\Program Files\\nodejs;${env:PATH}"
+  },
+  "python.defaultInterpreterPath": "C:\\Users\\Anant Soni\\AppData\\Local\\Programs\\Python\\Python314\\python.exe"
+}
